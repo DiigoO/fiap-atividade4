@@ -5,8 +5,10 @@ public class Aviao extends Thread{
     private String nomeVoo;
     private Aeroporto airport;
 
-    public Aviao(String nomeVoo) {
+    public Aviao(String nomeVoo, Aeroporto airport) {
+        super();
         this.nomeVoo = nomeVoo;
+        this.airport = airport;
     }
 
     public void voar(){

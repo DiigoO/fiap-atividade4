@@ -1,5 +1,6 @@
 package br.com.fiap.Atividade4.fiap;
 
+import br.com.fiap.Atividade4.fiap.Atividade4.II.Aeroporto;
 import br.com.fiap.Atividade4.fiap.Atividade4.II.Aviao;
 
 public class Atividade04 {
@@ -19,14 +20,13 @@ public class Atividade04 {
 //            }
 //        }
 
-        Aviao aviaoTan = new Aviao("TAN 123");
-        Aviao aviaoOLE = new Aviao("OLÉ 11");
-        Aviao aviaoLinha = new Aviao("LINHA 22");
+        Aviao aviaoTan = new Aviao("TAN 123", new Aeroporto("Guarulhos"));
+        Aviao aviaoOLE = new Aviao("OLÉ 11", new Aeroporto("Congonhas"));
+        Aviao aviaoLinha = new Aviao("LINHA 22", new Aeroporto("Viracops"));
 
         aviaoLinha.decoloar();
         aviaoOLE.aterrissar();
         aviaoTan.voar();
-
 
     }
 }

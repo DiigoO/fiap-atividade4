@@ -14,6 +14,8 @@ public class Aeroporto extends Thread {
     public boolean aguardarPistaDisponivel(){
         if (estadoPista){
             return true;
+        }else{
+            aguardarPistaDisponivel();
         }
         return false;
     }
